@@ -14,7 +14,7 @@ Dark green: #28b485
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -26,9 +26,10 @@ body {
   position: relative;
   height: 95vh; /* 95% of a view port height */
   background-image: linear-gradient(
-    to right bottom, 
-    rgba(141, 178, 212, 0.8), 
-    rgba(8, 33, 80, 0.8)), 
+      to right bottom,
+      rgba(141, 178, 212, 0.8),
+      rgba(8, 33, 80, 0.8)
+    ),
     url(../img/trold.jpg);
   background-size: cover; /* image will try to cover entire screen space without overlapping */
   background-position: center; /* always focus to the center of a container*/
@@ -50,25 +51,64 @@ body {
   top: 37%;
   left: 33%;
   transform: translate(-20%, -20%);
-  /* background-color: red; */
 }
 
-.heading-primary{
+.heading-primary {
   color: #ffffff;
   text-transform: uppercase;
+  backface-visibility: hidden;
 }
 
-.heading-primary-main{
+.heading-primary-main {
   display: block;
   font-size: 80px;
   font-weight: 900;
   letter-spacing: 35px;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
-
-.heading-primary-sub{
-  display: block; 
+.heading-primary-sub {
+  display: block;
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 24.9px;
+
+  animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    opacity: 0.9;
+    transform: translate(2%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    opacity: 0.9;
+    transform: translate(-2%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
