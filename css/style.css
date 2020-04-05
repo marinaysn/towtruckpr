@@ -23,6 +23,7 @@ body {
 }
 
 .header {
+  position: relative;
   height: 95vh; /* 95% of a view port height */
   background-image: linear-gradient(
     to right bottom, 
@@ -32,4 +33,14 @@ body {
   background-size: cover; /* image will try to cover entire screen space without overlapping */
   background-position: center; /* always focus to the center of a container*/
   clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo-img {
+  height: 120px;
 }
