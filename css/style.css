@@ -185,7 +185,7 @@ body {
 }
 
 .btn--white::after {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 
 .btn:hover::after {

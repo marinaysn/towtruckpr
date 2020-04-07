@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$colorPrimary: #f9ed69; //yellow
+$colorSecondary: #f08a5d; //orange
+$colorThird: #b83b5e; //pink
+$colorFourth: #4a3322; //pink
+
+$text-dark: #333; //dark grey
+$text-light: #eee; //white
+$width-button: 150px;
+
+nav {
+  margin: 30px;
+  background-color: $colorPrimary;
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+.navigation {
+  list-style: none;
+  float: left;
+
+  li {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 20px;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    a:link {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $text-dark;
+    }
+  }
+}
+
+.buttons {
+  float: right;
+}
+
+.btn-main,
+.btn-hot {
+  padding: 10px 20px;
+  display: inline-block;
+  text-align: center;
+  
+  border-radius: 0 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: $width-button;
+  color: $text-light
+}
+
+.btn-main {
+  &:link {
+    background-color: $colorThird;
+  }
+  &:hover {
+    background-color: lighten($colorThird, 15%)
+  }
+}
+
+.btn-hot {
+  &:link {
+    background-color: $colorFourth;
+    color: $text-light;
+  }
+  &:hover {
+    background-color: lighten($colorFourth, 25%)
+  }
+}
