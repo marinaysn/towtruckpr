@@ -10,17 +10,23 @@ $colorFourth: #4a3322; //pink
 
 $text-dark: #333; //dark grey
 $text-light: #eee; //white
+
 $width-button: 150px;
 
-nav {
-  margin: 30px;
-  background-color: $colorPrimary;
-
+//mixins
+@mixin clearFix {
   &::after {
     content: "";
     clear: both;
     display: table;
   }
+}
+
+nav {
+  margin: 30px;
+  background-color: $colorPrimary;
+
+  @include clearFix
 }
 
 .navigation {
