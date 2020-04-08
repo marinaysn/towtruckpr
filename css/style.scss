@@ -1,16 +1,15 @@
-$colorBack: #e0f0f7; // light blue
+$colorBack: #daeff5; // light blue
 $colorPrimary: #f9ed69; //yellow
 $colorSecondary: #f08a5d; //orange
 $colorGradientLightBlue: #8db2d4; //blue
 $colorGradientDarkBlue: #082150; //dark bue
-$colorShadow:#050236;
+$colorShadow: #050236;
 
 $text-dark: #333; //dark grey
 $text-light: #eee; //white
 
 $fontSizeMain: 52.5%;
 $width-button: 150px;
-
 
 *,
 *::after,
@@ -42,31 +41,29 @@ body {
       to right bottom,
       rgba($colorGradientLightBlue, 0.8),
       rgba($colorGradientDarkBlue, 0.8)
-
     ),
     url(../img/trold.jpg);
   background-size: cover; /* image will try to cover entire screen space without overlapping */
   background-position: center; /* always focus to the center of a container*/
   clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
 
-      &__logo-box {
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
-      }
-      &__logo-img {
-        height: 12rem;
-      }
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+  &__logo-img {
+    height: 12rem;
+  }
 
-      &__main-text-box {
-        position: absolute;
-        top: 37%;
-        left: 33%;
-        transform: translate(-20%, -20%);
-        text-align: center;
-      }
+  &__main-text-box {
+    position: absolute;
+    top: 37%;
+    left: 33%;
+    transform: translate(-20%, -20%);
+    text-align: center;
+  }
 }
-
 
 .heading-primary {
   color: $text-light;
@@ -78,12 +75,12 @@ body {
     font-size: 8rem;
     font-weight: 900;
     letter-spacing: 3.5rem;
-  
+
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
   }
-  
+
   &--sub {
     display: block;
     font-size: 3.5rem;
@@ -93,8 +90,6 @@ body {
     animation: moveInRight 1s ease-out;
   }
 }
-
-
 
 @keyframes moveInLeft {
   0% {
@@ -142,60 +137,58 @@ body {
   }
 }
 
-.btn:link,
-.btn:visited {
-  position: relative;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 2rem 15rem;
-  display: inline-block;
-  border-radius: 10rem;
+.btn {
+  &:link,
+  &:visited {
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2rem 15rem;
+    display: inline-block;
+    border-radius: 10rem;
 
-  transition: all 0.2s;
-}
+    transition: all 0.2s;
+  }
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($colorShadow, 0.2);
 
-.btn:hover {
-  transform: translateY(-0.3rem);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
 
-  box-shadow: 0 1rem 2rem rgba($colorShadow, 0.2);
-}
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 0.5rem rgba($colorShadow, 0.2);
+  }
+  &--white {
+    background-color: $text-light;
+    color: $text-dark;
+    font-weight: bold;
+    font-size: 2rem;
 
-.btn:active {
-  transform: translateY(-.1rem);
+    &::after {
+      background-color: $text-light;
+    }
+  }
 
-  box-shadow: 0 .5rem .5rem rgba($colorShadow, 0.2);
-}
+  &--animated {
+    animation: moveInUp 1s ease-out 0.25s;
+    animation-fill-mode: backwards;
+  }
 
-.btn--white {
-  background-color: $text-light;
-  color: $text-dark;
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-.btn--animated {
-  animation: moveInUp 1s ease-out .25s;
-  animation-fill-mode: backwards;
-}
-
-.btn::after {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
-
-.btn--white::after {
-  background-color: $text-light;
-}
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
 }
