@@ -18,7 +18,7 @@ body {
   line-height: 1.7;
   color: #333;
   padding: 2rem;
-  background-color: #daeff5;
+  background-color: #0d9214;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -184,7 +184,8 @@ body {
   }
 }
 
-.btn:link, .btn:visited {
+.btn:link,
+.btn:visited {
   position: relative;
   text-transform: uppercase;
   text-decoration: none;
@@ -202,12 +203,6 @@ body {
           box-shadow: 0 1rem 2rem rgba(5, 2, 54, 0.2);
 }
 
-.btn:hover::after {
-  -webkit-transform: scaleX(1.4) scaleY(1.6);
-          transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
 .btn:active {
   -webkit-transform: translateY(-0.1rem);
           transform: translateY(-0.1rem);
@@ -222,13 +217,9 @@ body {
   font-size: 2rem;
 }
 
-.btn--white::after {
-  background-color: #eee;
-}
-
 .btn--animated {
-  -webkit-animation: moveInUp 1s ease-out 0.25s;
-          animation: moveInUp 1s ease-out 0.25s;
+  -webkit-animation: moveInUp 1s ease-out .25s;
+          animation: moveInUp 1s ease-out .25s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -246,4 +237,14 @@ body {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
-/*# sourceMappingURL=style.css.map */
+
+.btn--white::after {
+  background-color: #eee;
+}
+
+.btn:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+/*# sourceMappingURL=main.css.map */
