@@ -18,7 +18,7 @@ body {
   line-height: 1.7;
   color: #333;
   padding: 2rem;
-  background-color: #dddfec;
+  background-color: #0d9214;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -247,4 +247,4 @@ body {
           transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
