@@ -1,10 +1,9 @@
-
-$colorBack1: #daeff5; // light blue
-$colorBack: #dddfec; // light blue
+$colorBack: #e0f0f7; // light blue
 $colorPrimary: #f9ed69; //yellow
 $colorSecondary: #f08a5d; //orange
 $colorGradientLightBlue: #8db2d4; //blue
 $colorGradientDarkBlue: #082150; //dark bue
+$colorShadow:#050236;
 
 $text-dark: #333; //dark grey
 $text-light: #eee; //white
@@ -49,51 +48,53 @@ body {
   background-size: cover; /* image will try to cover entire screen space without overlapping */
   background-position: center; /* always focus to the center of a container*/
   clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+
+      &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+      }
+      &__logo-img {
+        height: 12rem;
+      }
+
+      &__main-text-box {
+        position: absolute;
+        top: 37%;
+        left: 33%;
+        transform: translate(-20%, -20%);
+        text-align: center;
+      }
 }
 
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-
-.header__logo-img {
-  height: 12rem;
-}
-
-.header__main-text-box {
-  position: absolute;
-  top: 37%;
-  left: 33%;
-  transform: translate(-20%, -20%);
-  text-align: center;
-}
 
 .heading-primary {
   color: $text-light;
   text-transform: uppercase;
   backface-visibility: hidden;
+
+  &--main {
+    display: block;
+    font-size: 8rem;
+    font-weight: 900;
+    letter-spacing: 3.5rem;
+  
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+  
+  &--sub {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 2.49rem;
+    margin-bottom: 5rem;
+    animation: moveInRight 1s ease-out;
+  }
 }
 
-.heading-primary--main {
-  display: block;
-  font-size: 8rem;
-  font-weight: 900;
-  letter-spacing: 3.5rem;
 
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-}
-
-.heading-primary--sub {
-  display: block;
-  font-size: 3.5rem;
-  font-weight: 700;
-  letter-spacing: 2.49rem;
-  margin-bottom: 5rem;
-  animation: moveInRight 1s ease-out;
-}
 
 @keyframes moveInLeft {
   0% {
@@ -156,13 +157,13 @@ body {
 .btn:hover {
   transform: translateY(-0.3rem);
 
-  box-shadow: 0 1rem 2rem rgba(5, 2, 54, 0.2);
+  box-shadow: 0 1rem 2rem rgba($colorShadow, 0.2);
 }
 
 .btn:active {
   transform: translateY(-.1rem);
 
-  box-shadow: 0 .5rem .5rem rgba(5, 2, 54, 0.2);
+  box-shadow: 0 .5rem .5rem rgba($colorShadow, 0.2);
 }
 
 .btn--white {
