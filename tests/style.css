@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$colorPrimary: #f9ed69; //yellow
+$colorSecondary: #f08a5d; //orange
+$colorThird: #b83b5e; //pink
+$colorFourth: #4a3322; //pink
+
+$text-dark: #333; //dark grey
+$text-light: #eee; //white
+
+$width-button: 150px;
+
+//mixins
+@mixin clearFix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin linkTextFormat($colorLink) {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $colorLink;
+}
+
+//functions
+@function numDivision ($a, $b) {
+  @return $a / $b;
+}
+
+nav {
+  margin: numDivision(60, 2)* 1px; //30px
+  background-color: $colorPrimary;
+
+  @include clearFix;
+}
+
+.navigation {
+  list-style: none;
+  float: left;
+
+  li {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 20px;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    a:link {
+      @include linkTextFormat($text-dark);
+    }
+  }
+}
+
+.buttons {
+  float: right;
+}
+
+//extends
+%btn-placeholder {
+  padding: 10px 20px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 0 100px;
+  width: $width-button;
+
+  @include linkTextFormat($text-light);
+}
+
+.btn-main {
+  &:link {
+    @extend %btn-placeholder;
+    background-color: $colorThird;
+  }
+  &:hover {
+    background-color: lighten($colorThird, 15%);
+  }
+}
+
+.btn-hot {
+  &:link {
+    @extend %btn-placeholder;
+    background-color: $colorFourth;
+  }
+  &:hover {
+    background-color: lighten($colorFourth, 25%);
+  }
+}
