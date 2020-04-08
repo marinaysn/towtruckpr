@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass ./sass/main.scss ./scc/style.css"
   },
   "repository": {
     "type": "git",
