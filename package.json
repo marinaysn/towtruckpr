@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "compile:sass": "node-sass ./sass/main.scss ./scc/style.css"
+    "compile:sass": "node-sass ./sass/main.scss ./css/style.css -w"
   },
   "repository": {
     "type": "git",
