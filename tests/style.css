@@ -10,17 +10,34 @@ $colorFourth: #4a3322; //pink
 
 $text-dark: #333; //dark grey
 $text-light: #eee; //white
+
 $width-button: 150px;
 
-nav {
-  margin: 30px;
-  background-color: $colorPrimary;
-
+//mixins
+@mixin clearFix {
   &::after {
     content: "";
     clear: both;
     display: table;
   }
+}
+
+@mixin linkTextFormat($colorLink) {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $colorLink;
+}
+
+//functions
+@function numDivision ($a, $b) {
+  @return $a / $b;
+}
+
+nav {
+  margin: numDivision(60, 2)* 1px; //30px
+  background-color: $colorPrimary;
+
+  @include clearFix;
 }
 
 .navigation {
@@ -37,9 +54,7 @@ nav {
     }
 
     a:link {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: $text-dark;
+      @include linkTextFormat($text-dark);
     }
   }
 }
@@ -48,34 +63,33 @@ nav {
   float: right;
 }
 
-.btn-main,
-.btn-hot {
+//extends
+%btn-placeholder {
   padding: 10px 20px;
   display: inline-block;
   text-align: center;
-  
   border-radius: 0 100px;
-  text-decoration: none;
-  text-transform: uppercase;
   width: $width-button;
-  color: $text-light
+
+  @include linkTextFormat($text-light);
 }
 
 .btn-main {
   &:link {
+    @extend %btn-placeholder;
     background-color: $colorThird;
   }
   &:hover {
-    background-color: lighten($colorThird, 15%)
+    background-color: lighten($colorThird, 15%);
   }
 }
 
 .btn-hot {
   &:link {
+    @extend %btn-placeholder;
     background-color: $colorFourth;
-    color: $text-light;
   }
   &:hover {
-    background-color: lighten($colorFourth, 25%)
+    background-color: lighten($colorFourth, 25%);
   }
 }
