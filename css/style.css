@@ -9,7 +9,7 @@
 
 html {
   /* font-size: 62.5%; */
-  font-size: 52.5%;
+  font-size: 8px;
 }
 
 body {
@@ -248,5 +248,31 @@ body {
   -webkit-transform: translate(-20%, -20%);
           transform: translate(-20%, -20%);
   text-align: center;
+}
+
+.row {
+  max-width: 142.5rem;
+  background-color: #6b6be4;
+  margin: 0 auto;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 10rem;
+}
+
+.row .col-1-of-2 {
+  width: calc((100% - 7.5rem) / 2);
+  background-color: #cf1a1a;
+  float: left;
+}
+
+.row .col-1-of-2:not(:last-child) {
+  margin-right: 7.5rem;
+}
+
+.row .col-1-of-2::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 /*# sourceMappingURL=style.css.map */
