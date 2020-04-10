@@ -1,3 +1,5 @@
+
+//COLORS
 $colorBack: #daeff5; // light blue
 $colorPrimary: #f9ed69; //yellow
 $colorSecondary: #f08a5d; //orange
@@ -8,5 +10,11 @@ $colorShadow: #050236;
 $text-dark: #333; //dark grey
 $text-light: #eee; //white
 
-$fontSizeMain: 52.5%; //defines what 1 rem is
+// $fontSizeMain: 52.5%; //defines what 1 rem is
+$fontSizeMain: 8px; //defines what 1 rem is
 $width-button: 150px; 
+
+//GRID
+$grid-width: 142.5rem ;
+$gutter-vertical: 10rem;
+$gutter-horizontal: 7.5rem;
