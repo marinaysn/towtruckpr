@@ -173,12 +173,48 @@ body {
   text-shadow: 0.5rem 1rem 2rem rgba(8, 33, 80, 0.4);
 }
 
+.heading-tertiaty {
+  font-size: 3rem;
+  color: #0e4c9c;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.paragraph {
+  text-align: justify;
+  text-indent: 4rem;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
 .u-center-text {
   text-align: center;
 }
 
-.u-margin-bottom-10 {
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 5rem;
+}
+
+.u-margin-bottom-big {
   margin-bottom: 10rem;
+}
+
+.u-margin-top-small {
+  margin-top: 2rem;
+}
+
+.u-margin-top-medium {
+  margin-top: 5rem;
+}
+
+.u-margin-top-big {
+  margin-top: 10rem;
 }
 
 .section-about {

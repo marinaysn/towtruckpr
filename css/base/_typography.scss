@@ -52,3 +52,20 @@ body {
     
   }
 }
+
+.heading-tertiaty {
+  font-size: 3rem;
+  color: $colorNavyBlueShade ;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.paragraph{
+  text-align: justify;
+  text-indent: 4rem;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+}
