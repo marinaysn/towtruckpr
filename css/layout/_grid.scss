@@ -1,6 +1,6 @@
 .row {
   max-width: $grid-width;
-  background-color: rgb(216, 216, 247);
+  // background-color: rgb(216, 216, 247);
   margin: 0 auto;
   font-size: 20px;
 
@@ -15,7 +15,7 @@
   //other selectors class$="col-"  - means everything that ends with "col-"
   
   [class^="col-"] {
-      background-color: rgb(7, 67, 82);
+      // background-color: rgb(23, 133, 160);
       float: left;
       &:not(:last-child) {
       margin-right: $gutter-horizontal;

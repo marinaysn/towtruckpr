@@ -161,8 +161,24 @@ body {
   display: inline-block;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRywnyWTtiPkbuTc-hXlcC6iahvovUtltGqsk0CT_FIWY4RoOBJ&usqp=CAU);
   -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
+  letter-spacing: .5rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.heading-secondary:hover {
+  -webkit-transform: skewY(2deg) skewX(10deg) scale(1.1);
+          transform: skewY(2deg) skewX(10deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(8, 33, 80, 0.4);
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-10 {
+  margin-bottom: 10rem;
 }
 
 .section-about {
@@ -269,7 +285,6 @@ body {
 
 .row {
   max-width: 142.5rem;
-  background-color: #d8d8f7;
   margin: 0 auto;
   font-size: 20px;
 }
@@ -285,7 +300,6 @@ body {
 }
 
 .row [class^="col-"] {
-  background-color: #074352;
   float: left;
 }
 
