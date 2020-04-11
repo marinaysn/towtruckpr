@@ -183,6 +183,7 @@ body {
 .paragraph {
   text-align: justify;
   text-indent: 4rem;
+  font-size: 2.5rem;
 }
 
 .paragraph:not(:last-child) {
@@ -206,7 +207,7 @@ body {
 }
 
 .u-margin-top-small {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .u-margin-top-medium {
@@ -258,7 +259,7 @@ body {
   background-color: #eee;
   color: #333;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .btn--white::after {
@@ -284,6 +285,34 @@ body {
   z-index: -1;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.btn-text:link, .btn-text:visited {
+  color: #0e4c9c;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 0.4rem solid #0e4c9c;
+  padding: 1rem;
+  padding-bottom: .5rem;
+  font-size: 2.5rem;
+}
+
+.btn-text:hover {
+  background-color: #0e4c9c;
+  color: #daeff5;
+  -webkit-box-shadow: 0 1rem 2rem rgba(8, 33, 80, 0.15);
+          box-shadow: 0 1rem 2rem rgba(8, 33, 80, 0.15);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  border-radius: .8rem;
+}
+
+.btn-text:active {
+  -webkit-transform: translateY(-0.1rem);
+          transform: translateY(-0.1rem);
+  -webkit-box-shadow: 0 0.5rem 0.5rem rgba(5, 2, 54, 0.2);
+          box-shadow: 0 0.5rem 0.5rem rgba(5, 2, 54, 0.2);
 }
 
 .header {
