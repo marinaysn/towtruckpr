@@ -1,10 +1,29 @@
 .feature-box {
+  background-color: rgba($color-grey-light1, 0.8);
+  font-size: 2rem;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+  box-sizing: 0 2rem 4rem rgba($colorShadow, 0.2);
+  transition: transform 0.2s;
+  
 
   &__icon {
+    font-size: 7rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    background-image: url(https://lh3.googleusercontent.com/proxy/3F5JkXpbaY-18aZG5emMWxi3HP-MXZNjNAHRz6iW9RX0lYxx3IQ0kHm1B_6Vq6St4g1qaVI1pZ35H_NtszII0gHlgFEf4gIUmORybW9S1hpWug);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  &:hover {
 
+    box-shadow:  2rem 2rem 3rem rgba($colorLightShadow, .15);
+    transform: translateY(-6px) scale(1.03);
   }
 
   &__text {
-
+    text-align: justify;
+    text-indent: 4rem;
   }
 }
