@@ -35,8 +35,7 @@
 
   .col-1-of-3 {
     width: calc((100% - #{$gutter-horizontal}*2) / 3); 
-     //need to make all cards equal size
-     display: flex;
+
   }
 
   .col-2-of-3 {
