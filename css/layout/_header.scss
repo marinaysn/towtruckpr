@@ -10,7 +10,7 @@
     url(../img/trold.jpg);
   background-size: cover; /* image will try to cover entire screen space without overlapping */
   background-position: center; /* always focus to the center of a container*/
-  clip-path: polygon(0 0, 100% 0, 100% 82vh, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
 
   &__logo-box {
     position: absolute;
