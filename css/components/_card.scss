@@ -17,6 +17,7 @@
     top: 0;
     left: 0;
     border-radius: 1rem;
+    overflow: hidden;
     box-shadow: 0 2rem 4rem rgba($colorShadow, 0.2);
 
     //marina
@@ -70,8 +71,32 @@
     transform: rotateY(0);
   }
 
-  //front side of the card. Image top part
+  //front side of the card. Image top part styling
   &__picture {
+    background-size: cover;
+    
+    height: 32rem;
+   // width: 100%;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 86%, 33% 98%, 0 90%, 0% 43%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 86%, 33% 98%, 0 90%, 0% 43%, 0 0);
+    
+    &--1{
+      background-image: url(../img/tr/people/1o.jpg);
+      opacity: .9;
+    }
+
+    &--2{
+      background-image: url(../img/tr/people/g1o.jpg);
+    }
+
+    &--3{
+      background-image: url(../img/tr/people/g1o.jpg);
+    }
+
+    &__heading {
+
+    }
 
   }
 }
