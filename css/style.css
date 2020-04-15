@@ -465,7 +465,7 @@ body {
 }
 
 .card__side--front {
-  background-color: #0e4c9c;
+  background-color: white;
 }
 
 .card__side--back {
@@ -500,8 +500,8 @@ body {
 }
 
 .card:hover .card__side--front {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
 }
 
 .card:hover .card__side--back {
