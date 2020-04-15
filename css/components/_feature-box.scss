@@ -4,7 +4,9 @@
   padding: 2rem;
   margin: 2rem 0;
   text-align: center;
-  box-sizing: 0 2rem 4rem rgba($colorShadow, 0.2);
+  //box-shadow: 0 2rem 4rem rgba($colorShadow, 0.2);
+  box-sizing: content-box;
+  width: 100%;
   transition: transform 0.2s;
 
   &__icon {
@@ -16,8 +18,7 @@
     color: transparent;
   }
   &:hover {
-
-    box-shadow:  2rem 2rem 3rem rgba($colorLightShadow, .15);
+    box-shadow: 2rem 2rem 3rem rgba($colorLightShadow, 0.15);
     transform: translateY(-6px) scale(1.03);
   }
 

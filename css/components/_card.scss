@@ -1,34 +1,72 @@
 .card {
-  perspective: 1800rem;
-  -moz-perspective: 1800rem;
+  perspective: 180rem;
+  -moz-perspective: 180rem;
   position: relative;
-  
+  height: 70rem;
+
   &__side {
-    color: wheat;
-    height: 50rem;
+    color: $color-grey-light1;
+    height: 70rem;
     width: 100%;
     backface-visibility: hidden; // or use z-index
-    transition: all 0.8s;
-   // display: flex;
-   position: absolute;
-   top: 0;
-   left: 0;
+    transition: all 0.8s ease;
+    // display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 4rem rgba($colorShadow, 0.2);
 
-   &--front {
-    background-color: blue;
-   }
-   &--back {
-    background-color: red;
+    //marina
+    text-align: center;
+    padding: 20px;
+    
+
+    &--front {
+      // background-color: $color-grey-light1;
+      background-color: $colorNavyBlueShade;
+    }
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $colorGradientLightYellow,
+          $colorGradientDarkYellow
+        );
+      }
+    }
+
+    p {
+      font-size: 3rem;
+      color: #f3f3f3;
+      margin: 0;
+      padding-top: 5rem;
+    }
+
+    h3 {
+      font-size: 30px;
+      font-weight: 700;
+      margin-top: 6rem;
+      text-transform: uppercase;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 10px;
+    }
+
+    .socials i {
+      margin: 3rem .5rem;
+      color: rgb(20, 28, 105);
+    }
+  }
+
+  &:hover &__side--front {
     transform: rotateY(180deg);
   }
-  }
 
-  &:hover &__side--front{
-    transform: rotateY(180deg);
-
-  }
-
-  &:hover &__side--back{
+  &:hover &__side--back {
     transform: rotateY(0);
   }
 }
+
+

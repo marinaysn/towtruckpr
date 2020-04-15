@@ -408,8 +408,9 @@ body {
   padding: 2rem;
   margin: 2rem 0;
   text-align: center;
-  -webkit-box-sizing: 0 2rem 4rem rgba(5, 2, 54, 0.2);
-          box-sizing: 0 2rem 4rem rgba(5, 2, 54, 0.2);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100%;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
@@ -438,33 +439,64 @@ body {
 }
 
 .card {
-  -webkit-perspective: 1800rem;
-          perspective: 1800rem;
-  -moz-perspective: 1800rem;
+  -webkit-perspective: 180rem;
+          perspective: 180rem;
+  -moz-perspective: 180rem;
   position: relative;
+  height: 70rem;
 }
 
 .card__side {
-  color: wheat;
-  height: 50rem;
+  color: #f7f7f7;
+  height: 70rem;
   width: 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 2rem 4rem rgba(5, 2, 54, 0.2);
+          box-shadow: 0 2rem 4rem rgba(5, 2, 54, 0.2);
+  text-align: center;
+  padding: 20px;
 }
 
 .card__side--front {
-  background-color: blue;
+  background-color: #0e4c9c;
 }
 
 .card__side--back {
-  background-color: red;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+.card__side--back-1 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f7c65d), to(#da4910));
+  background-image: linear-gradient(to right bottom, #f7c65d, #da4910);
+}
+
+.card__side p {
+  font-size: 3rem;
+  color: #f3f3f3;
+  margin: 0;
+  padding-top: 5rem;
+}
+
+.card__side h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 6rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+}
+
+.card__side .socials i {
+  margin: 3rem .5rem;
+  color: #141c69;
 }
 
 .card:hover .card__side--front {
