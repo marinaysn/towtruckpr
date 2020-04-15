@@ -1,5 +1,4 @@
 .card {
-
   //Fuctionality
   perspective: 180rem;
   -moz-perspective: 180rem;
@@ -23,7 +22,6 @@
     //marina
     text-align: center;
     padding: 20px;
-    
 
     &--front {
       // background-color: $color-grey-light1;
@@ -58,7 +56,7 @@
     }
 
     .socials i {
-      margin: 3rem .5rem;
+      margin: 3rem 0.5rem;
       color: rgb(20, 28, 105);
     }
   }
@@ -74,31 +72,72 @@
   //front side of the card. Image top part styling
   &__picture {
     background-size: cover;
-    
+
     height: 32rem;
-   // width: 100%;
+    // width: 100%;
     background-blend-mode: screen;
-    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 86%, 33% 98%, 0 90%, 0% 43%, 0 0);
-    clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 86%, 33% 98%, 0 90%, 0% 43%, 0 0);
-    
-    &--1{
+    -webkit-clip-path: polygon(
+      50% 0%,
+      100% 0,
+      100% 43%,
+      100% 86%,
+      33% 98%,
+      0 90%,
+      0% 43%,
+      0 0
+    );
+    clip-path: polygon(
+      50% 0%,
+      100% 0,
+      100% 43%,
+      100% 86%,
+      33% 98%,
+      0 90%,
+      0% 43%,
+      0 0
+    );
+    z-index: 0;
+
+    &--1 {
       background-image: url(../img/tr/people/1o.jpg);
-      opacity: .9;
+      opacity: 0.9;
     }
 
-    &--2{
+    &--2 {
       background-image: url(../img/tr/people/g1o.jpg);
     }
 
-    &--3{
+    &--3 {
       background-image: url(../img/tr/people/g1o.jpg);
     }
 
-    &__heading {
-
-    }
-
+    
   }
+  
+  &__heading {
+      font-size: 4rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: rgb(255, 255, 255);
+      font-family: 'ZCOOL XiaoWei', serif;
+      text-align: right;
+      
+      position: absolute;
+      top: 35%;
+      right: 3rem; 
+      width: 75%;
+    }
+
+    &__heading-span {
+      //padding: 1.3rem 2rem;
+       -webkit-box-decoration-break: clone;
+       box-decoration-break: clone;
+
+      &--1 {
+        background-image: linear-gradient(
+          to right bottom, rgba($colorGradientLightYellow, 0.8),
+          rgba($colorGradientDarkYellow, 0.8)
+        );
+      }
+    }
 }
-
-

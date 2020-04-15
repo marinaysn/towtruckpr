@@ -496,7 +496,7 @@ body {
 }
 
 .card__side .socials i {
-  margin: 3rem .5rem;
+  margin: 3rem 0.5rem;
   color: #141c69;
 }
 
@@ -516,11 +516,12 @@ body {
   background-blend-mode: screen;
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 86%, 33% 98%, 0 90%, 0% 43%, 0 0);
   clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 86%, 33% 98%, 0 90%, 0% 43%, 0 0);
+  z-index: 0;
 }
 
 .card__picture--1 {
   background-image: url(../img/tr/people/1o.jpg);
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .card__picture--2 {
@@ -529,6 +530,29 @@ body {
 
 .card__picture--3 {
   background-image: url(../img/tr/people/g1o.jpg);
+}
+
+.card__heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  font-family: 'ZCOOL XiaoWei', serif;
+  text-align: right;
+  position: absolute;
+  top: 35%;
+  right: 3rem;
+  width: 75%;
+}
+
+.card__heading-span {
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.card__heading-span--1 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(247, 198, 93, 0.8)), to(rgba(218, 73, 16, 0.8)));
+  background-image: linear-gradient(to right bottom, rgba(247, 198, 93, 0.8), rgba(218, 73, 16, 0.8));
 }
 
 .header {
