@@ -37,6 +37,22 @@
           $colorGradientDarkYellow
         );
       }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $colorGradientLightGreen,
+          $colorGradientDarkGreen
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $colorGradientLightBlue,
+          $colorGradientDarkBlue
+        );
+      }
     }
 
     p {
@@ -108,7 +124,7 @@
     }
 
     &--3 {
-      background-image: url(../img/tr/people/g1o.jpg);
+      background-image: url(../img/tr/people/1b.jpg);
     }
   }
 
@@ -122,7 +138,7 @@
 
     position: absolute;
     top: 35%;
-    right: 3rem;
+    right: 4rem;
     width: 75%;
   }
 
@@ -138,6 +154,24 @@
         rgba($colorGradientDarkYellow, 0.8)
       );
     }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($colorGradientLightGreen, 0.8),
+        rgba($colorGradientDarkGreen, 0.8)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($colorGradientLightBlue, 0.8),
+        rgba($colorGradientDarkBlue, 0.8)
+      );
+    }
+
+
   }
 
   &__details {

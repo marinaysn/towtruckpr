@@ -479,6 +479,16 @@ body {
   background-image: linear-gradient(to right bottom, #f7c65d, #da4910);
 }
 
+.card__side--back-2 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#baf394), to(#127209));
+  background-image: linear-gradient(to right bottom, #baf394, #127209);
+}
+
+.card__side--back-3 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#9bb0c4), to(#082150));
+  background-image: linear-gradient(to right bottom, #9bb0c4, #082150);
+}
+
 .card__side p {
   font-size: 3rem;
   color: #f3f3f3;
@@ -529,7 +539,7 @@ body {
 }
 
 .card__picture--3 {
-  background-image: url(../img/tr/people/g1o.jpg);
+  background-image: url(../img/tr/people/1b.jpg);
 }
 
 .card__heading {
@@ -541,7 +551,7 @@ body {
   text-align: right;
   position: absolute;
   top: 35%;
-  right: 3rem;
+  right: 4rem;
   width: 75%;
 }
 
@@ -553,6 +563,16 @@ body {
 .card__heading-span--1 {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(247, 198, 93, 0.8)), to(rgba(218, 73, 16, 0.8)));
   background-image: linear-gradient(to right bottom, rgba(247, 198, 93, 0.8), rgba(218, 73, 16, 0.8));
+}
+
+.card__heading-span--2 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(186, 243, 148, 0.8)), to(rgba(18, 114, 9, 0.8)));
+  background-image: linear-gradient(to right bottom, rgba(186, 243, 148, 0.8), rgba(18, 114, 9, 0.8));
+}
+
+.card__heading-span--3 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(155, 176, 196, 0.8)), to(rgba(8, 33, 80, 0.8)));
+  background-image: linear-gradient(to right bottom, rgba(155, 176, 196, 0.8), rgba(8, 33, 80, 0.8));
 }
 
 .card__details {
