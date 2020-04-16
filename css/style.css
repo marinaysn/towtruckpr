@@ -258,9 +258,14 @@ body {
 
 .section-people {
   background-color: #f7f7f7;
-  padding: 35rem 0 20rem 0;
+  padding: 35rem 0 30rem 0;
   margin-top: -5%;
   margin-bottom: -9%;
+}
+
+.section-story {
+  padding: 18rem 0;
+  background-color: #f7f7f7;
 }
 
 .btn:link, .btn:visited {
