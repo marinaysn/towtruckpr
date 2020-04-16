@@ -258,7 +258,7 @@ body {
 
 .section-people {
   background-color: #f7f7f7;
-  padding: 35rem 0 50rem 0;
+  padding: 35rem 0 20rem 0;
   margin-top: -5%;
   margin-bottom: -9%;
 }
@@ -303,6 +303,17 @@ body {
 
 .btn--white::after {
   background-color: #eee;
+}
+
+.btn--blue {
+  background-color: #0e4c9c;
+  color: #eee;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.btn--blue::after {
+  background-color: #0e4c9c;
 }
 
 .btn--animated {
