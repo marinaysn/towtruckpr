@@ -37,6 +37,22 @@
           $colorGradientDarkYellow
         );
       }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $colorGradientLightGreen,
+          $colorGradientDarkGreen
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $colorGradientLightBlue,
+          $colorGradientDarkBlue
+        );
+      }
     }
 
     p {
@@ -108,36 +124,74 @@
     }
 
     &--3 {
-      background-image: url(../img/tr/people/g1o.jpg);
+      background-image: url(../img/tr/people/1b.jpg);
     }
-
-    
   }
-  
+
   &__heading {
-      font-size: 4rem;
-      text-transform: uppercase;
-      font-weight: 400;
-      color: rgb(255, 255, 255);
-      font-family: 'ZCOOL XiaoWei', serif;
-      text-align: right;
-      
-      position: absolute;
-      top: 35%;
-      right: 3rem; 
-      width: 75%;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-family: 'ZCOOL XiaoWei', serif;
+    text-align: right;
+
+    position: absolute;
+    top: 35%;
+    right: 4rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    //padding: 1.3rem 2rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($colorGradientLightYellow, 0.8),
+        rgba($colorGradientDarkYellow, 0.8)
+      );
     }
 
-    &__heading-span {
-      //padding: 1.3rem 2rem;
-       -webkit-box-decoration-break: clone;
-       box-decoration-break: clone;
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($colorGradientLightGreen, 0.8),
+        rgba($colorGradientDarkGreen, 0.8)
+      );
+    }
 
-      &--1 {
-        background-image: linear-gradient(
-          to right bottom, rgba($colorGradientLightYellow, 0.8),
-          rgba($colorGradientDarkYellow, 0.8)
-        );
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($colorGradientLightBlue, 0.8),
+        rgba($colorGradientDarkBlue, 0.8)
+      );
+    }
+
+
+  }
+
+  &__details {
+
+    padding: 4rem;
+    ul {
+      list-style: none;
+      width: 75%;
+      margin: 0 auto;
+    }
+
+    li {
+      text-align: center;
+      font-size: 2rem;
+      color: $color-grey-dark;
+      padding: 1rem;
+
+      &:not(:last-child){
+        border-bottom: 1px dotted $color-grey-dark;
       }
     }
+  }
 }
