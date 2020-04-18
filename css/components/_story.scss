@@ -1,0 +1,35 @@
+.story {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 4rem rgba($colorNavyBlueShade, 0.1);
+  background-color: $color-grey-light1;
+  border-radius: 5px;
+  padding: 6rem;
+  padding-left: 11rem;
+  font-size: $default-font-size;
+  transform: skewX(-12deg);
+
+  
+
+  &__shape {
+    width: 20rem;
+    height: 20rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+
+  }
+
+  &__img{
+    height: 100%;
+  }
+
+  &__text{
+    
+    transform: skewX(12deg);
+  }
+
+}
