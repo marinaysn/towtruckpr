@@ -647,11 +647,19 @@ body {
 
 .story__img {
   height: 100%;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+  -webkit-transform: translateX(-5rem) scale(1.4);
+          transform: translateX(-5rem) scale(1.4);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .story__text {
   -webkit-transform: skewX(12deg);
           transform: skewX(12deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .story__caption {
@@ -667,12 +675,19 @@ body {
   opacity: 0;
   -webkit-transition: all, 0.5s;
   transition: all, 0.5s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .story:hover .story__caption {
   opacity: 1;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.story:hover .story__img {
+  -webkit-transform: translateX(-5rem) scale(1);
+          transform: translateX(-5rem) scale(1);
 }
 
 .header {
