@@ -9,7 +9,7 @@
    flex-flow: row wrap;
 
   &:not(:last-child) {
-    margin-bottom: $gutter-vertical;
+    margin-bottom: $gutter-vertical-s;
   }
 
   @include clearFix;
