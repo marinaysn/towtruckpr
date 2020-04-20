@@ -265,14 +265,13 @@ body {
 
 .section-people {
   background-color: #f7f7f7;
-  padding: 35rem 0 30rem 0;
+  padding: 35rem 0 10rem 0;
   margin-top: -5%;
-  margin-bottom: -9%;
 }
 
 .section-story {
-  padding: 18rem 0;
-  background-color: #f7f7f7;
+  padding: 1rem 0;
+  position: relative;
 }
 
 .btn:link, .btn:visited {
@@ -624,7 +623,7 @@ body {
   margin: 0 auto;
   -webkit-box-shadow: 0 3rem 4rem rgba(14, 76, 156, 0.1);
           box-shadow: 0 3rem 4rem rgba(14, 76, 156, 0.1);
-  background-color: #f7f7f7;
+  background-color: rgba(247, 247, 247, 0.5);
   border-radius: 5px;
   padding: 6rem;
   padding-left: 11rem;
@@ -693,6 +692,24 @@ body {
           filter: blur(5px) brightness(80%);
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-size: cover;
+  opacity: .25;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .header {
   position: relative;
   height: 95vh;
@@ -740,7 +757,7 @@ body {
 }
 
 .row:not(:last-child) {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .row::after {
