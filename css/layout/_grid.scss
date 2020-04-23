@@ -12,6 +12,13 @@
     margin-bottom: $gutter-vertical-s;
   }
 
+  &__flex {
+    //need to make all cards same size
+   display: flex; 
+  flex-flow: row wrap;
+
+  }
+
   @include clearFix;
 
   //use atributes: apply to all atributes that start with col- ex: .col-1-of-2
