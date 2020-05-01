@@ -281,8 +281,9 @@ body {
 }
 
 .book {
-  background-image: linear-gradient(100deg, rgba(247, 247, 247, 0.9) 0%, rgba(247, 247, 247, 0.9) 55%, transparent 55%), url(../img/nat-10.jpg);
-  background-size: cover;
+  background-image: linear-gradient(100deg, rgba(247, 247, 247, 0.9) 0%, rgba(247, 247, 247, 0.9) 55%, transparent 55%), url(../img/tr/001a.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
   border-radius: 5px;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(5, 2, 54, 0.2);
           box-shadow: 0 1.5rem 4rem rgba(5, 2, 54, 0.2);
@@ -729,6 +730,56 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form__input {
+  font-size: 2rem;
+  padding: 2rem 2.5rem;
+  border-radius: 2px;
+  background-color: rgba(247, 247, 247, 0.5);
+  font-family: inherit;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  color: inherit;
+}
+
+.form__input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 1rem 2rem rgba(5, 2, 54, 0.1);
+          box-shadow: 0 1rem 2rem rgba(5, 2, 54, 0.1);
+  border-bottom: 3px solid #0e4c9c;
+}
+
+.form__input:focus:focus:invalid {
+  border-bottom: 3px solid #da4910;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.form__label {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 2.5rem;
+  margin-top: .7rem;
+  display: block;
+  color: inherit;
+  font-family: inherit;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
 }
 
 .header {
