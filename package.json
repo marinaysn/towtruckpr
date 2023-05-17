@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/marinaysn/towtruckpr#readme",
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^8.0.0"
   },
   "dependencies": {
     "jquery": "^3.5.0"
